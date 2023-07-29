@@ -1,0 +1,44 @@
+.banner__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(/assets/img/banner.png) no-repeat;
+    background-size: cover;
+    padding: 150px 0 100px 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.banner__descripcion-boton {
+    width: 7%;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    background: #2A7AE4;
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    font-size: .85rem;
+    font-weight: 300;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.banner__descripcion-boton:hover {
+    background: #F5F5F5;
+    color: #2A7AE4;
+    font-weight: 600;
+}
+
+.banner__descripcion-titulo {
+    font-size: 4.8rem;
+}
+
+.banner__descripcion-parrafo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.banner__descripcion-parrafo, .banner__descripcion-titulo {
+    margin: .3rem 0;
+}
