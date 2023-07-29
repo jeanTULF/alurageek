@@ -1,0 +1,54 @@
+.header__container {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.header__item-searchbar, .header__item-logo  {
+    margin: 0 20px;
+}
+
+.header__item-searchbar {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header__item-searchbar-input {
+    background: #F5F5F5;
+    border: none;
+    padding: .70rem 2rem;
+    border-radius: 40px;
+    width: 100%;
+    outline: transparent;
+}
+
+.header__item-searchbar-icon {
+    position: absolute;
+    right: 1120px;
+}
+
+
+.header__item-button {
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px solid #2A7AE4;
+    padding: .75rem 5rem;
+    color: #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.5s;
+}
+
+.header__item-button:hover {
+    background: #2A7AE4;
+    color: #F5F5F5;
+}
