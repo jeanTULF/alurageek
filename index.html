@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/css/header/style-header.css">
     <link rel="stylesheet" href="/assets/css/banner/banner-style.css">
     <link rel="stylesheet" href="./assets/css/products/producto-style.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer-style.css">
+    <link rel="stylesheet" href="./assets/css/header/header-style-responsive.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +39,11 @@
             <div class="productos__container">
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Star Wars</p>
-                    <a href="#" class="productos__container-head-link">Ver Todo <img src="./assets/img/flecha.svg" alt="flecha"></a>
+                    <div class="productos__container-head-link">
+                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
+                    </div>
+                    
                 </div>
                 <ul class="productos__container-list">
                     <li class="productos__container-item">
@@ -82,7 +88,10 @@
             <div class="productos__container">
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Consolas</p>
-                    <a href="#" class="productos__container-head-link">Ver Todo <img src="./assets/img/flecha.svg" alt="flecha"></a>
+                    <div class="productos__container-head-link">
+                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
+                    </div>
                 </div>
                 <ul class="productos__container-list">
                     <li class="productos__container-item">
@@ -127,7 +136,10 @@
             <div class="productos__container">
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Diversos</p>
-                    <a href="#" class="productos__container-head-link">Ver Todo <img src="./assets/img/flecha.svg" alt="flecha"></a>
+                    <div class="productos__container-head-link">
+                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
+                    </div>
                 </div>
                 <ul class="productos__container-list">
                     <li class="productos__container-item">
@@ -169,6 +181,32 @@
                 </ul>
             </div>
         </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#"><img src="./assets/img/Logo.png" alt="AluraGeek-logo"></a>
+            </div>
+            <ul class="footer__link-list">
+                <li class="footer__link-item"><a href="#">Quienes somos</a></li>
+                <li class="footer__link-item"><a href="#">Politica de privacidad</a></li>
+                <li class="footer__link-item"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer__link-item"><a href="#">Nuestras Tiendas</a></li>
+                <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
+                <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
+            </ul>
+            <div class="footer__form">
+                <p>Hable con nosotros</p>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+
+                <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
+                <button class="form__button">Enviar mensaje</button>
+            </div>
+        </footer>
+        <div class="final">
+            <p>Desarrollado por Jean Polo</p>
+            <p>2023</p>
+        </div>
     </main>
 </body>
 </html>

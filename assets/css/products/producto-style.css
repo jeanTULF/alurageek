@@ -27,8 +27,12 @@
 }
 
 .productos__container-head-link {
+    display: flex;
+    align-items: center;
+}
+
+.productos__container-head-link-boton {
     text-decoration: none;
-    text-align: center;
     color: #2A7AE4;
 }
 
