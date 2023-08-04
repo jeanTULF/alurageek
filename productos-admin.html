@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/img/AluraGeek-logo.ico">
-    <link rel="stylesheet" href="/assets/css/header/style-header.css">
-    <link rel="stylesheet" href="/assets/css/banner/banner-style.css">
-    <link rel="stylesheet" href="./assets/css/products/producto-style.css">
     <link rel="stylesheet" href="./assets/css/footer/footer-style.css">
+    <link rel="stylesheet" href="./assets/css/login/header-style-login.css">
+    <link rel="stylesheet" href="./assets/css/products/producto-style-admin.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>AluraGeek | Home</title>
+    <title>Productos | Admin</title>
 </head>
 <body>
     <header class="header__container">
@@ -24,26 +20,12 @@
             <img class="header__item-searchbar-icon" src="/assets/img/Icone.svg" alt="searchbar-icon">
             </div>
         </div>
-        <div class="header__item">
-            <a class="header__item-button" href="login.html">Login</a>
-        </div>
     </header>
+
     <main>
-        <div class="banner__container">
-            <h1 class="banner__descripcion-titulo">Agosto Promocional</h1>
-            <p class="banner__descripcion-parrafo">Productos seleccionados con 33% de descuento</p>
-            <a href="#" class="banner__descripcion-boton">Ver consolas</a>
-        </div>
+
         <section class="productos">
             <div class="productos__container">
-                <div class="productos__container-head">
-                    <p class="productos__container-head-titulo">Star Wars</p>
-                    <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
-                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
-                    </div>
-                    
-                </div>
                 <ul class="productos__container-list">
                     <li class="productos__container-item">
                         <img src="./assets/img/taza-trooper.png" alt="taza-de-stormtrooper">
@@ -81,18 +63,6 @@
                         <p>$ 60.00</p>
                         <a href="#">Ver producto</a>
                     </li>
-                </ul>
-            </div>
-
-            <div class="productos__container">
-                <div class="productos__container-head">
-                    <p class="productos__container-head-titulo">Consolas</p>
-                    <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
-                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
-                    </div>
-                </div>
-                <ul class="productos__container-list">
                     <li class="productos__container-item">
                         <img src="./assets/img/control.png" alt="control">
                         <p>Producto XYZ</p>
@@ -129,18 +99,6 @@
                         <p>$ 60.00</p>
                         <a href="#">Ver producto</a>
                     </li>
-                </ul>
-            </div>
-
-            <div class="productos__container">
-                <div class="productos__container-head">
-                    <p class="productos__container-head-titulo">Diversos</p>
-                    <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
-                        <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
-                    </div>
-                </div>
-                <ul class="productos__container-list">
                     <li class="productos__container-item">
                         <img src="./assets/img/camisa-atari.png" alt="camisa-atari">
                         <p>Producto XYZ</p>
@@ -177,35 +135,35 @@
                         <p>$ 60.00</p>
                         <a href="#">Ver producto</a>
                     </li>
-                </ul>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer__logo">
-                <a href="#"><img src="./assets/img/Logo.png" alt="AluraGeek-logo"></a>
-            </div>
-            <ul class="footer__link-list">
-                <li class="footer__link-item"><a href="#">Quienes somos</a></li>
-                <li class="footer__link-item"><a href="#">Politica de privacidad</a></li>
-                <li class="footer__link-item"><a href="#">Programa de fidelidad</a></li>
-                <li class="footer__link-item"><a href="#">Nuestras Tiendas</a></li>
-                <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
-                <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
-            </ul>
-            <div class="footer__form">
-                <p>Hable con nosotros</p>
 
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-
-                <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
-                <button class="form__button">Enviar mensaje</button>
-            </div>
-        </footer>
-        <div class="final">
-            <p>Desarrollado por Jean Polo</p>
-            <p>2023</p>
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="#"><img src="./assets/img/Logo.png" alt="AluraGeek-logo"></a>
         </div>
-    </main>
+        <ul class="footer__link-list">
+            <li class="footer__link-item"><a href="#">Quienes somos</a></li>
+            <li class="footer__link-item"><a href="#">Politica de privacidad</a></li>
+            <li class="footer__link-item"><a href="#">Programa de fidelidad</a></li>
+            <li class="footer__link-item"><a href="#">Nuestras Tiendas</a></li>
+            <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
+            <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
+        </ul>
+        <div class="footer__form">
+            <p>Hable con nosotros</p>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+
+            <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
+            <button class="form__button">Enviar mensaje</button>
+        </div>
+    </footer>
+    <div class="final">
+        <p>Desarrollado por Jean Polo</p>
+        <p>2023</p>
+    </div>
+</main>
 </body>
 </html>
