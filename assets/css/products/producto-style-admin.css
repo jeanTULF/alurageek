@@ -15,7 +15,7 @@
 .productos__container-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    gap: 4.5rem;
     flex-wrap: wrap;
     width: 100%;
 }
