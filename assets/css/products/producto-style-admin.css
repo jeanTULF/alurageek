@@ -5,6 +5,34 @@
     flex-direction: column;
 }
 
+.productos__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.producto__header-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #464646;
+}
+
+.productos__button-add {
+    border: 1px solid transparent;
+    background: #2A7AE4;
+    padding: 1rem;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.productos__button-add:hover {
+    color: #2A7AE4;
+    background: #FFF;
+    border: 1px solid #2A7AE4;
+}
+
 .productos__container {
     display: flex;
     width: 100%;

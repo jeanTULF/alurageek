@@ -49,6 +49,7 @@
     flex-direction: column;
     gap: 10px;
     font-size: 1rem;
+    color: #464646;
 }
 
 .productos__container-item a {
@@ -59,6 +60,10 @@
 
 .productos__container-item a:hover {
     text-decoration: underline;
+}
+
+.productos__container-item p:nth-child(3){
+    font-weight: bold;
 }
 
 .productos__container-item img {

@@ -14,7 +14,7 @@
 }
 
 .header__item-searchbar, .header__item-logo  {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .header__item-searchbar {
@@ -30,7 +30,6 @@
     border-radius: 40px;
     width: 100%;
     outline: transparent;
-    color: #A2A2A2;
 }
 
 .header__item-searchbar-icon {
@@ -43,7 +42,7 @@
     text-decoration: none;
     font-size: 1.1rem;
     border: 1px solid #2A7AE4;
-    padding: .75rem 5rem;
+    padding: .75rem 2.5rem;
     color: #2A7AE4;
     transition: 0.5s;
 }

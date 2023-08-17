@@ -5,6 +5,12 @@
     background: #EAF2FD;
 }
 
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
 .footer__link-list {
     list-style: none;
     display: flex;

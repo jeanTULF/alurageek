@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    .footer__logo {
+        flex-direction: column;
+        width: auto;
+        gap: 15px;
+    }
+
+    .footer__form {
+        width: 60%;
+    }
+
+    .footer__form button {
+        width: 30%;
+        padding: .85rem .75rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .banner__container {
+        padding: 100px 50px;
+    }
+
+    .banner__descripcion-titulo {
+        font-size: 3.5rem;
+    }
+
+    .banner__descripcion-boton {
+        width: 20%;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}

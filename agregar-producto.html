@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/AluraGeek-logo.ico">
+    <link rel="stylesheet" href="./assets/css/footer/footer-style.css">
+    <link rel="stylesheet" href="./assets/css/header/header-style-admin.css">
+    <link rel="stylesheet" href="./assets/css/agregar-producto/agregar-producto.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Agregar producto | Admin</title>
+</head>
+
+
+<body>
+    <header class="header__container">
+        <div class="header__item">
+            <a class="header__item-logo" href="index.html"><img src="/assets/img/Logo.png" alt="Logo AluraGeek"></a>
+            <div class="header__item-searchbar">
+            <input class="header__item-searchbar-input" placeholder="¿Qué deseas buscar?">
+            <img class="header__item-searchbar-icon" src="/assets/img/Icone.svg" alt="searchbar-icon">
+            </div>
+        </div>
+        <div class="header__item">
+            <a class="header__item-button" href="#">Menú Administrador</a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="productos__new-container">
+            <p class="productos__new-text">Agregar nuevo producto</p>
+            <input type="text" class="new__input" placeholder="URL de imagen">
+            <input type="text" class="new__input" placeholder="Categoria">
+            <input type="text" class="new__input" placeholder="Nombre del producto">
+            <input type="text" class="new__input" placeholder="Precio del producto">
+            <textarea class="new__input" placeholder="Descripcion del producto"></textarea>
+            <button class="new__button" role="link" onclick="window.location='productos-admin.html'">Agregar producto</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="#"><img src="./assets/img/Logo.png" alt="AluraGeek-logo"></a>
+        </div>
+        <ul class="footer__link-list">
+            <li class="footer__link-item"><a href="#">Quienes somos</a></li>
+            <li class="footer__link-item"><a href="#">Politica de privacidad</a></li>
+            <li class="footer__link-item"><a href="#">Programa de fidelidad</a></li>
+            <li class="footer__link-item"><a href="#">Nuestras Tiendas</a></li>
+            <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
+            <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
+        </ul>
+        <div class="footer__form">
+            <p>Hable con nosotros</p>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+
+            <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
+            <button class="form__button">Enviar mensaje</button>
+        </div>
+    </footer>
+    <div class="final">
+        <p>Desarrollado por Jean Polo</p>
+        <p>2023</p>
+    </div>
+</body>
+</html>
