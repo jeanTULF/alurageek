@@ -34,7 +34,7 @@
 
 .header__item-searchbar-icon {
     position: absolute;
-    right: 900px;
+    right: 880px;
 }
 
 
@@ -50,4 +50,8 @@
 .header__item-button:hover {
     background: #2A7AE4;
     color: #F5F5F5;
+}
+
+.header__searchbar-mobile {
+    display: none;
 }

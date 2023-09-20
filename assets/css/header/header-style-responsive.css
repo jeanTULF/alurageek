@@ -12,4 +12,43 @@
         font-weight: 600;
         margin-left: 100px;
     }
+
+    .header__searchbar-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__container {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .header__item {
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .header__item-logo {
+        margin: 0;
+        width: 85%;
+    }
+
+    .header__item-logo img {
+        width: 100%;
+    }
+
+    .header__item-searchbar {
+        display: none;
+    }
+
+    .header__item-button {
+        margin-left: 0px;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .header__searchbar-mobile {
+        display: inline-block;
+        box-sizing: border-box;
+    }
 }
