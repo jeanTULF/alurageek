@@ -42,3 +42,23 @@
 .productos__new-container textarea {
     resize: none;
 }
+
+@media screen and (max-width:768px) {
+    .new__input, .new__button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .new__input, .new__button {
+        padding: 1rem .5rem;
+    }
+
+    .productos__new-container {
+        padding: 2rem 0;
+    }
+
+    .productos__new-text {
+        font-size: 1.5rem;
+    }
+}
