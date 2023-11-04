@@ -59,10 +59,20 @@
             <div class="footer__form">
                 <p>Hable con nosotros</p>
 
+                <div class="form__input">
+                <input type="text" id="nombre" required>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
+                </div>
 
-                <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
+                <div class="form__input">
+                    <input type="email" id="email" required>
+                    <label for="email">Correo electrónico</label>
+                </div>
+
+                <div class="form__input">
+                <input type="text" id="mensaje" required>
+                <label for="mensaje">Mensaje</label>
+            </div>
                 <button class="form__button">Enviar mensaje</button>
             </div>
         </footer>

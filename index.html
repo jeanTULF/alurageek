@@ -203,11 +203,20 @@
             <form class="footer__form" id="formulario">
                 <p>Hable con nosotros</p>
 
-                <input type="text" id="nombre" placeholder="Escriba aquí su nombre" required maxlength="40">
-                <label for="nombre">Nombre</label>
-        
-
-                <input type="text" id="mensaje" placeholder="Escribe tu mensaje">
+                <div class="form__input">
+                    <input type="text" id="nombre" required>
+                    <label for="nombre">Nombre</label>
+                    </div>
+    
+                    <div class="form__input">
+                        <input type="email" id="email" required>
+                        <label for="email">Correo electrónico</label>
+                    </div>
+    
+                    <div class="form__input">
+                    <input type="text" id="mensaje" required>
+                    <label for="mensaje">Mensaje</label>
+                </div>
                 <button class="form__button" type="submit">Enviar mensaje</button>
             </form>
             
