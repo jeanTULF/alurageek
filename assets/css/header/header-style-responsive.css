@@ -12,10 +12,6 @@
         font-weight: 600;
         margin-left: 100px;
     }
-
-    .header__searchbar-mobile {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 500px) {

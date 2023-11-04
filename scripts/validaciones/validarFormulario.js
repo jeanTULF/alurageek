@@ -1,0 +1,12 @@
+let nombre = document.getElementById("nombre");
+let formulario = document.getElementById("formulario");
+const regex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+
+formulario.addEventListener("submit", (e) => {
+    if(!regex.test(nombre.value)){
+        e.preventDefault()
+        alert("el nombre no es valido", nombre)
+    } else {
+        alert("se ha enviado el formulario correctamente")
+    }
+})

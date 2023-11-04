@@ -26,6 +26,7 @@
 
 .container {
     gap: 16px;
+    width: 100%;
 }
 
 .login__user, .login__password {

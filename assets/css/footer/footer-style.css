@@ -41,7 +41,7 @@
 }
 
 .footer__form label {
-    position: relative;
+    position: absolute;
     color: #A2A2A2;
 }
 

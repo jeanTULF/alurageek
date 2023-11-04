@@ -52,3 +52,7 @@
     background: #2A7AE4;
     color: #F5F5F5;
 }
+
+.header__searchbar-mobile {
+    display: none;
+}

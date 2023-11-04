@@ -30,12 +30,18 @@
     </header>
     <main>
         <section class="login">
-            <div class="container">
+            <form class="container" id="login-form">
             <p class="login__text">Iniciar Sesión</p>
-            <input type="email" class="login__user" placeholder="Escriba su correo electrónico">
-            <input type="password" class="login__password" placeholder="Escriba su contraseña">
-            <button class="login__button" role="link" onclick="window.location='./productos-admin.html' ">Entrar</button>
+            <div class="container__input">
+            <input type="email" class="login__user" id="email" placeholder="Escriba su correo electrónico">
+            <span class="form__msj-error">No puede estar en blanco ni vacio</span>
             </div>
+            <div class="container__input">
+            <input type="password" class="login__password" id="password" placeholder="Escriba su contraseña">
+            <span class="form__msj-error">No puede estar en blanco ni vacio</span>
+            </div>
+            <button class="login__button" id="login" role="link">Entrar</button>
+            </form>
         </section>
 
         <footer class="footer">
@@ -65,6 +71,6 @@
             <p>2023</p>
         </div>
     </main>
-
+<script src="./scripts/validaciones/validarLogin.js"></script>
 </body>
 </html>

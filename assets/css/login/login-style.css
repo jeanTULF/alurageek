@@ -9,8 +9,16 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    width: 100%;
+    width: 30%;
     height: auto;
+    margin: auto;
+}
+
+.container__input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .login__text {
@@ -20,7 +28,7 @@
 .login__user, .login__password {
     padding: 1.5rem .5rem;
     border-radius: 4px;
-    width: 30%; 
+    width: 100%; 
     border: none;
     outline: none;
     border-bottom: 1px solid #C8C8C8;
@@ -30,9 +38,19 @@
     color: #A2A2A2;
 }
 
+.form__msj-error {
+    display: none;
+    font-size: 13px;
+    align-self: flex-start;
+    color: red;
+}
+
+.form__msj-error-activo {
+    display: block;
+}
+
 .login__button {
-    
-    width: 30%;
+    width: 100%;
     padding: 1rem .5rem;
     border: 1px solid transparent;
     outline: transparent;

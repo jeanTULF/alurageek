@@ -39,14 +39,14 @@
         <div class="banner__container">
             <h1 class="banner__descripcion-titulo">Agosto Promocional</h1>
             <p class="banner__descripcion-parrafo">Productos seleccionados con 33% de descuento</p>
-            <a href="#" class="banner__descripcion-boton">Ver consolas</a>
+            <a href="productos-admin.html" class="banner__descripcion-boton">Ver consolas</a>
         </div>
         <section class="productos">
             <div class="productos__container">
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Star Wars</p>
                     <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <a href="productos-admin.html" class="productos__container-head-link-boton">Ver Todo</a>
                         <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
                     </div>
                     
@@ -95,7 +95,7 @@
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Consolas</p>
                     <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <a href="productos-admin.html" class="productos__container-head-link-boton">Ver Todo</a>
                         <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                 <div class="productos__container-head">
                     <p class="productos__container-head-titulo">Diversos</p>
                     <div class="productos__container-head-link">
-                        <a href="#" class="productos__container-head-link-boton">Ver Todo</a>
+                        <a href="productos-admin.html" class="productos__container-head-link-boton">Ver Todo</a>
                         <img src="./assets/img/flecha.svg" alt="flecha" class="productos__container-head-link-icon">
                     </div>
                 </div>
@@ -200,20 +200,23 @@
                 </ul>
             </div>
             
-            <div class="footer__form">
+            <form class="footer__form" id="formulario">
                 <p>Hable con nosotros</p>
 
+                <input type="text" id="nombre" placeholder="Escriba aquí su nombre" required maxlength="40">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
+        
 
-                <input type="text" id="mensaje" placeholder="Escribe tu mensaje" >
-                <button class="form__button">Enviar mensaje</button>
-            </div>
+                <input type="text" id="mensaje" placeholder="Escribe tu mensaje">
+                <button class="form__button" type="submit">Enviar mensaje</button>
+            </form>
+            
         </footer>
         <div class="final">
             <p>Desarrollado por Jean Polo</p>
             <p>2023</p>
         </div>
     </main>
+    <script type="module" src="./scripts/validaciones/validarFormulario.js"></script>
 </body>
 </html>
