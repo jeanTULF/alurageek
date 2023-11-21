@@ -20,22 +20,24 @@
 .header__item-searchbar {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    position: relative;
+    flex: 0 0 50%;
 }
 
 .header__item-searchbar-input {
     background: #F5F5F5;
     border: none;
+    border-radius: 40px 0 0 40px;
     padding: .70rem 2rem;
-    border-radius: 40px;
-    width: 100%;
+    width: 80%;
     outline: transparent;
-    color: #A2A2A2;
 }
 
-.header__item-searchbar-icon {
-    position: absolute;
-    right: 1120px;
+.header__item-searchicon{
+    background: #fafafa;
+    border-radius: 0 40px 40px 0;
+    padding: .35rem 1.5rem;
 }
 
 

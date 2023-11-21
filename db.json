@@ -1,19 +1,75 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+ {
+    "productos": [
+      { "img": "https://oechsle.vteximg.com.br/arquivos/ids/12684747-1500-1500/imageUrl_2.jpg?v=638053550680600000",
+        "id": 1, 
+        "nombre": "Espada láser", 
+        "categoria": "Star Wars", 
+        "precio": 49.99 },
+
+      { 
+        "id": 2, 
+        "nombre": "Figura de acción de Darth Vader", 
+        "categoria": "Star Wars", 
+        "precio": 19.99 },
+
+      { "id": 3, 
+      "nombre": "Juego de consola XYZ", 
+      "categoria": "Consola", 
+      "precio": 59.99 },
+
+      { "id": 4, 
+      "nombre": "Controlador de consola ABC", 
+      "categoria": "Consola",
+       "precio": 29.99 },
+
+      { "id": 5, 
+      "nombre": "Puzzle de 1000 piezas", 
+      "categoria": "Variados", 
+      "precio": 14.99 },
+
+      { "id": 6, 
+      "nombre": "Botella de agua con diseño único", 
+      "categoria": "Variados", 
+      "precio": 5.99 },
+      
+      { "id": 7, 
+      "nombre": "Sable de luz", 
+      "categoria": "Star Wars", 
+      "precio": 39.99 },
+
+      { "id": 8, "nombre": 
+      "Figura de acción de Yoda", 
+      "categoria": "Star Wars", 
+      "precio": 24.99 },
+
+      { "id": 9, 
+      "nombre": "Juego de consola ABC", 
+      "categoria": "Consola", 
+      "precio": 49.99 },
+
+      { "id": 10, 
+      "nombre": "Auriculares para consola XYZ", 
+      "categoria": "Consola", 
+      "precio": 39.99 },
+
+      { "id": 11, 
+      "nombre": "Libro de misterio", 
+      "categoria": "Variados", 
+      "precio": 12.99 },
+
+      { "id": 12, 
+      "nombre": "Peluche suave", 
+      "categoria": "Variados", 
+      "precio": 8.99 }
+      
+    ],
+
+    "perfil": [
+      {
+        "email": "usuario@example.com",
+        "contraseña": "contraseña_segura"
+      }
+      
+    ]
   }
-}
+  
