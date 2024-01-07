@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    box-sizing: border-box;
 }
 
 .form__input input:focus ~ label,
@@ -71,6 +72,13 @@
     left: 5px;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+
+.input-message-error {
+    display: none;
+    color: #df2525;
+    font-size: .70rem;
+    bottom: 5px;
 }
 
 #mensaje {

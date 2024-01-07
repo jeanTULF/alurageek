@@ -32,15 +32,24 @@
 
 
     <main>
-        <div class="productos__new-container">
+        <form class="productos__new-container" data-form>
             <p class="productos__new-text">Agregar nuevo producto</p>
-            <input type="text" class="new__input" placeholder="URL de imagen">
-            <input type="text" class="new__input" placeholder="Categoria">
-            <input type="text" class="new__input" placeholder="Nombre del producto" required maxlength="20">
-            <input type="text" class="new__input" placeholder="Precio del producto">
-            <textarea class="new__input" placeholder="Descripcion del producto" maxlength="150"></textarea>
-            <button class="new__button" role="link" onclick="window.location='productos-admin.html'">Agregar producto</button>
+            <div class="drop-container">
+                    <div class="drop-area">
+                        <h2 class="drag-title">Arrastre para agregar una imagen para el producto</h2>
+                        <input type="file" name="" id="input-file" hidden> 
+                    </div>
+                    <span>O</span>
+                <button class="drag-button">Busque en su computador</button>
+                <div id="preview"></div>
         </div>
+            <input type="text" name="urlimage" class="new__input" placeholder="URL de imagen" data-url>
+            <input type="text" name="categoria" class="new__input" placeholder="Categoria" data-categoria>
+            <input type="text" name="nombre" class="new__input" placeholder="Nombre del producto" required maxlength="20" data-nombre>
+            <input type="text" name="precio" class="new__input" placeholder="Precio del producto" data-precio>
+            <textarea name="descripcion" class="new__input" placeholder="Descripcion del producto" maxlength="150" data-descripcion></textarea>
+            <button type="submit" class="new__button">Agregar producto</button>
+    </form>
     </main>
 
     <footer class="footer">
@@ -79,5 +88,14 @@
         <p>Desarrollado por Jean Polo</p>
         <p>2023</p>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="service/registroProducto.js"></script>
+    <script src="scripts/drag.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

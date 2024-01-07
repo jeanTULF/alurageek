@@ -27,12 +27,28 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
     // Realiza la validación 
     if (email === "usuario@example.com" && password === "contraseña_segura") {
-        alert("Inicio de sesión exitoso");
-        document.querySelector(`.form__msj-error`).classList.remove('form__msj-error-activo')
+        Swal.fire({
+            title: 'Inicio de sesión exitoso',
+            text: '¡Bienvenido de nuevo!',
+            icon: 'success',
+            showConfirmButton: false,
+            allowOutsideClick: false
+        });
+        document.querySelector(`.form__msj-error`).classList.remove('form__msj-error-activo');
+        setTimeout(() => {
         window.location.href = "./productos-admin.html";
-        // Puedes redirigir al usuario o realizar las acciones necesarias
+        }, 1500);
     } else {
-        alert("Error: Correo electrónico o contraseña incorrectos.");
+        Swal.fire({
+            title: 'Error',
+            text: 'Correo electrónico o contraseña incorrectos.',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            allowOutsideClick: false,
+            customClass: {
+                confirmButton: 'botonswal'
+            }
+        });
         document.querySelector(`.form__msj-error`).classList.add('form__msj-error-activo')
         
     }

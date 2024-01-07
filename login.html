@@ -60,18 +60,21 @@
                 <p>Hable con nosotros</p>
 
                 <div class="form__input">
-                <input type="text" id="nombre" required>
+                <input type="text" id="nombre" required data-tipo="nombre">
                 <label for="nombre">Nombre</label>
+                <span class="input-message-error">Este campo no es valido</span>
                 </div>
 
                 <div class="form__input">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" required data-tipo="email">
                     <label for="email">Correo electrónico</label>
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
 
                 <div class="form__input">
-                <input type="text" id="mensaje" required>
+                <input type="text" id="mensaje" required data-tipo="mensaje">
                 <label for="mensaje">Mensaje</label>
+                <span class="input-message-error">Este campo no es valido</span>
             </div>
                 <button class="form__button">Enviar mensaje</button>
             </div>
@@ -83,5 +86,6 @@
     </main>
 <script src="./scripts/validaciones/validarLogin.js"></script>
 <script type="module" src="./scripts/validaciones/validarFormulario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

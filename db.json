@@ -1,75 +1,139 @@
- {
-    "productos": [
-      { "img": "https://oechsle.vteximg.com.br/arquivos/ids/12684747-1500-1500/imageUrl_2.jpg?v=638053550680600000",
-        "id": 1, 
-        "nombre": "Espada láser", 
-        "categoria": "Star Wars", 
-        "precio": 49.99 },
-
-      { 
-        "id": 2, 
-        "nombre": "Figura de acción de Darth Vader", 
-        "categoria": "Star Wars", 
-        "precio": 19.99 },
-
-      { "id": 3, 
-      "nombre": "Juego de consola XYZ", 
-      "categoria": "Consola", 
-      "precio": 59.99 },
-
-      { "id": 4, 
-      "nombre": "Controlador de consola ABC", 
+{
+  "productos": [
+    {
+      "img": "https://oechsle.vteximg.com.br/arquivos/ids/12684747-1500-1500/imageUrl_2.jpg?v=638053550680600000",
+      "id": 1,
+      "nombre": "Espada láser",
+      "categoria": "Star Wars",
+      "precio": 49.99
+    },
+    {
+      "id": 2,
+      "nombre": "Figura de acción de Darth Vader",
+      "categoria": "Star Wars",
+      "precio": 19.99
+    },
+    {
+      "id": 3,
+      "nombre": "Juego de consola XYZ",
       "categoria": "Consola",
-       "precio": 29.99 },
-
-      { "id": 5, 
-      "nombre": "Puzzle de 1000 piezas", 
-      "categoria": "Variados", 
-      "precio": 14.99 },
-
-      { "id": 6, 
-      "nombre": "Botella de agua con diseño único", 
-      "categoria": "Variados", 
-      "precio": 5.99 },
-      
-      { "id": 7, 
-      "nombre": "Sable de luz", 
-      "categoria": "Star Wars", 
-      "precio": 39.99 },
-
-      { "id": 8, "nombre": 
-      "Figura de acción de Yoda", 
-      "categoria": "Star Wars", 
-      "precio": 24.99 },
-
-      { "id": 9, 
-      "nombre": "Juego de consola ABC", 
-      "categoria": "Consola", 
-      "precio": 49.99 },
-
-      { "id": 10, 
-      "nombre": "Auriculares para consola XYZ", 
-      "categoria": "Consola", 
-      "precio": 39.99 },
-
-      { "id": 11, 
-      "nombre": "Libro de misterio", 
-      "categoria": "Variados", 
-      "precio": 12.99 },
-
-      { "id": 12, 
-      "nombre": "Peluche suave", 
-      "categoria": "Variados", 
-      "precio": 8.99 }
-      
-    ],
-
-    "perfil": [
-      {
-        "email": "usuario@example.com",
-        "contraseña": "contraseña_segura"
-      }
-      
-    ]
-  }
-  
+      "precio": 59.99
+    },
+    {
+      "id": 4,
+      "nombre": "Controlador de consola ABC",
+      "categoria": "Consola",
+      "precio": 29.99
+    },
+    {
+      "id": 5,
+      "nombre": "Puzzle de 1000 piezas",
+      "categoria": "Variados",
+      "precio": 14.99
+    },
+    {
+      "id": 6,
+      "nombre": "Botella de agua con diseño único",
+      "categoria": "Variados",
+      "precio": 5.99
+    },
+    {
+      "id": 7,
+      "nombre": "Sable de luz",
+      "categoria": "Star Wars",
+      "precio": 39.99
+    },
+    {
+      "id": 8,
+      "nombre": "Figura de acción de Yoda",
+      "categoria": "Star Wars",
+      "precio": 24.99
+    },
+    {
+      "id": 9,
+      "nombre": "Juego de consola ABC",
+      "categoria": "Consola",
+      "precio": 49.99
+    },
+    {
+      "id": 10,
+      "nombre": "Auriculares para consola XYZ",
+      "categoria": "Consola",
+      "precio": 39.99
+    },
+    {
+      "id": 11,
+      "nombre": "Libro de misterio",
+      "categoria": "Variados",
+      "precio": 12.99
+    },
+    {
+      "id": 12,
+      "nombre": "Peluche suave",
+      "categoria": "Variados",
+      "precio": 8.99
+    },
+    {
+      "urlImagen": "https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Espada láser",
+      "precio": "25.99",
+      "descripcion": "Espada de juguete tamaño escala",
+      "id": "dd1efa4c-3ab4-4abb-872d-4b8f996d754d"
+    },
+    {
+      "urlImagen": "https://i.blogs.es/8a371e/captura-de-pantalla-2020-11-06-a-las-3.35.58/original.png",
+      "categoria": "Consolas",
+      "nombre": "Playstation 5",
+      "precio": "499.99",
+      "descripcion": "Consola de última generación ",
+      "id": "0183bd4e-4392-45f0-bc0e-f5e165eccbe9"
+    },
+    {
+      "urlImagen": "https://jjstorepty.com/wp-content/uploads/2021/08/original.png",
+      "categoria": "Consolas",
+      "nombre": "Xbox Series X",
+      "precio": "499.99",
+      "descripcion": "Consola de última generación",
+      "id": "87b60f5a-b3d2-4309-ab7f-8b6baec321ee"
+    },
+    {
+      "urlImagen": "https://www.raenco.com/pub/media/catalog/product/cache/b155626005c48413abb43c687f9f8ca5/2/9/2910534.jpg",
+      "categoria": "Consolas",
+      "nombre": "Nintendo Switch",
+      "precio": "299.99",
+      "descripcion": "Consola portátil",
+      "id": "605f74db-fe1b-4c44-a562-4237673a0de4"
+    },
+    {
+      "id": "4ff9f195-b6a1-464f-89b4-e7dd3a0741a1",
+      "nombre": "Figura Tengen Uzui",
+      "urlImagen": "https://ryokufiguras.com/wp-content/uploads/2023/06/Figura-Tengen-Uzui-Demon-Slayer-FIGURE-Kimetsu-No-Yaiba-Bandai-Spirits.webp",
+      "categoria": "Diversos",
+      "precio": "35.99",
+      "descripcion": "¡Consigue la figura Tengen Uzui Demon Slayer FIGURE Kimetsu No Yaiba Banpresto 20cm y trae a casa a este intrépido cazador de demonios de Demon Slayer"
+    },
+    {
+      "id": "d7f4c013-d8b8-4c03-bcbf-0fb2d48d8a4c",
+      "nombre": "Figura Tengen Uzui",
+      "urlImagen": "https://ryokufiguras.com/wp-content/uploads/2023/06/Figura-Tengen-Uzui-Demon-Slayer-FIGURE-Kimetsu-No-Yaiba-Bandai-Spirits.webp",
+      "categoria": "Diversos",
+      "precio": "35.99",
+      "descripcion": "¡Consigue la figura Tengen Uzui Demon Slayer FIGURE Kimetsu No Yaiba Banpresto 20cm y trae a casa a este intrépido cazador de demonios de Demon Slayer"
+    },
+    {
+      "id": "012c3187-27db-4f67-a983-67ab65f38130",
+      "nombre": "Figura Zenitsu ",
+      "urlImagen": "https://i.pinimg.com/736x/92/94/55/9294553b6ee8440246ff2f248fccbae4.jpg",
+      "categoria": "Diversos",
+      "precio": "35.99",
+      "descripcion": "Marca: Kotobukiya Línea de producto: ARTFX J Franquicia: Kimetsu no Yaiba Nombre personaje: Agatsuma Zenitsu Versión: Materiales: PVC, ABS"
+    }
+  ],
+  "perfil": [
+    {
+      "email": "usuario@example.com",
+      "contraseña": "contraseña_segura"
+    }
+  ]
+}
