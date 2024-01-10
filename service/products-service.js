@@ -1,3 +1,6 @@
+const listaProductos = () => 
+fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+
 const crearProducto = (urlImagen, categoria, nombre, precio, descripcion) => {
     return fetch ("http://localhost:3000/productos", {
         method: "POST",
@@ -13,5 +16,6 @@ const crearProducto = (urlImagen, categoria, nombre, precio, descripcion) => {
 
 
 export const productsService = {
-    crearProducto
+    crearProducto,
+    listaProductos
 }

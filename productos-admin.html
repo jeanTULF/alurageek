@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/products/producto-style-admin.css">
     <link rel="stylesheet" href="./assets/css/products/producto-style-admin-responsive.css">
     <link rel="stylesheet" href="./assets/css/login/footer-login-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Productos | Admin</title>
@@ -35,9 +36,15 @@
                     <p class="producto__header-text">Todos los productos</p>
                     <a href="agregar-producto.html" class="productos__button-add">Agregar producto</a>
                 </div>
-                <ul class="productos__container-list">
+                <ul class="productos__container-list" data-list>
                     <li class="productos__container-item">
-                        <img src="./assets/img/taza-trooper.png" alt="taza-de-stormtrooper">
+                        <div class="productos__container-img">
+                            <div class="icon-container">
+                                <i class="bi bi-trash-fill icon1"></i>
+                                <i class="bi bi-pencil-fill icon2"></i>
+                            </div>
+                            <img src="./assets/img/taza-trooper.png" alt="taza-de-stormtrooper">
+                        </div>
                         <p>Producto XYZ</p>
                         <p>$ 60.00</p>
                         <p class="id" >ID #000000</p>
@@ -184,5 +191,7 @@
         <p>2023</p>
     </div>
 </main>
+<script type="module" src="./controllers/productos.controller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

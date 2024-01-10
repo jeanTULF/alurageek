@@ -53,6 +53,7 @@
     flex-direction: column;
     gap: 10px;
     font-size: 1rem;
+    max-width: 200px;
 }
 
 .productos__container-item a {
@@ -67,4 +68,32 @@
 
 .productos__container-item img {
     width: 200px;
+}
+
+.productos__container-img {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-container i {
+    color: #FFF;
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.icon1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.icon2:hover {
+    color: #2A7AE4;
+    cursor: pointer;
 }
