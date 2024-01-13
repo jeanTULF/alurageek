@@ -1,22 +1,29 @@
-let nombre = document.getElementById("nombre");
-let formulario = document.getElementById("formulario");
+// let nombre = document.querySelector("[data-nombre-form]");
+// let email = document.querySelector("[data-email-form]");
+// const formulario = document.querySelector("data-formulario");
 
-formulario.addEventListener("submit", (e) => {
-    if(!regex.test(nombre.value)){
-        alert(`el nombre ${nombre.value} no es valido`)
-        
-        e.preventDefault()
-    } else {
-        alert("se ha enviado el formulario correctamente")
-    }
-});
+// formulario.addEventListener('submit', (e) => {
+//     if(!regex.test(nombre.value)){
+//         alert(`el nombre ${nombre.value} no es valido`);
+//         e.preventDefault();
+//     } else {
+//         Swal.fire({
+//             title: 'Envio exitoso',
+//             text: '¡Formulario enviado correctamente!',
+//             icon: 'success',
+//             showConfirmButton: false,
+//             allowOutsideClick: false
+//         });
+//     }
+// });
 
-/*
+
 const tipoDeErrores = [
     "valueMissing",
     "patternMismatch",
     "typeMismatch"
 ]
+
 
 const mensajesDeError = {
     nombre: {
@@ -49,12 +56,21 @@ export function valida(input) {
         validadores[tipoDeInput](input)
     }
 
-    if(input.validity.valid) {
-        input.parentElement.classList.remove("input-container--invalid");
-        input.parentElement.querySelector(".input-message-error").innerHTML = ""
-    }else {
-        input.parentElement.classList.add("input-container--invalid");
-        input.parentElement.querySelector(".input-message-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+    const errorContainer = input.parentElement.querySelector(".error-msj");
+
+    if (input.validity.valid) {
+        input.parentElement.classList.remove("active");
+        errorContainer.innerHTML = "";  // Limpiar el mensaje de error
+    } else {
+        input.parentElement.classList.add("active");
+        errorContainer.innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
 
-}*/
+};
+
+
+
+//validacion formulario input 
+
+const name = document.querySelector("data-nombre");
+const url = document.querySelector("data-url");

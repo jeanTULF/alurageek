@@ -31,6 +31,30 @@
       "categoria": "Diversos",
       "precio": "1299.99",
       "descripcion": "Celulares"
+    },
+    {
+      "id": "df978ff8-8931-446c-a4bb-d69e6680c72f",
+      "nombre": "T-Shirt Toji F",
+      "urlImagen": "https://i.ebayimg.com/images/g/GiAAAOSw3G5k2muT/s-l1200.webp",
+      "categoria": "Diversos",
+      "precio": "20.00",
+      "descripcion": "T-shirt anime "
+    },
+    {
+      "id": "f7631b16-1dad-439c-a4ac-aeab9b5694ce",
+      "nombre": "Iphone 15 Pro Max",
+      "urlImagen": "https://movicenter.com.pa/wp-content/uploads/2023/10/86c82e3d34595a405d18155633e9e7b2ee5ed667_Apple_MU773ZP_A_Mobile_Phone_Hero_1.jpg",
+      "categoria": "Diversos",
+      "precio": "1499.99",
+      "descripcion": "Celulares"
+    },
+    {
+      "id": "428093db-e105-4acc-a683-a9f80a35cc77",
+      "nombre": "Reloj",
+      "urlImagen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/97a8541a-60a8-4cae-acbd-423430a1d842.5760a5d47424887bf9b178d025f1ac1c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "categoria": "Diversos",
+      "precio": "39.99",
+      "descripcion": "Reloj Minecraft"
     }
   ],
   "perfil": [

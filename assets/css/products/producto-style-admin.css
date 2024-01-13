@@ -82,11 +82,7 @@
     transform: translate(-50%, -50%);
 }
 
-.icon-container i {
-    color: #FFF;
-    font-size: 30px;
-    margin: 40px 0;
-}
+
 
 .icon1:hover {
     color: red;

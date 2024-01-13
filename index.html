@@ -200,22 +200,25 @@
                 </ul>
             </div>
             
-            <form class="footer__form" id="formulario">
+            <form class="footer__form" id="formulario" data-formulario>
                 <p>Hable con nosotros</p>
 
                 <div class="form__input">
-                    <input type="text" id="nombre" required maxlength="40">
+                    <input type="text" id="nombre" name="nombre" required maxlength="40" data-nombre-form>
                     <label for="nombre">Nombre</label>
+                    <div class="error-msj"><span>Este campo esta vacío</span></div>
                     </div>
     
                     <div class="form__input">
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required data-email-form>
                         <label for="email">Correo electrónico</label>
+                        <div class="error-msj"><span>Este campo esta vacío</span></div>
                     </div>
     
                     <div class="form__input">
-                    <input type="text" id="mensaje" required maxlength="120">
+                    <input type="text" id="mensaje" name="mensaje" required maxlength="120" data-msj-form>
                     <label for="mensaje">Mensaje</label>
+                    <div class="error-msj"><span>Este campo esta vacío</span></div>
                 </div>
                 <button class="form__button" type="submit">Enviar mensaje</button>
             </form>
@@ -226,6 +229,7 @@
             <p>2023</p>
         </div>
     </main>
-    <script type="module" src="./scripts/validaciones/validarFormulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./scripts/app.js"></script>
 </body>
 </html>

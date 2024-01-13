@@ -7,7 +7,6 @@ const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, i
         <img src="${urlImagen}">
         <p>${nombre}</p>
         <p>$ ${precio}</p>
-        <p>${id}</p>
         <p>${descripcion}</p>
     `;
     espacio.innerHTML = contenido;

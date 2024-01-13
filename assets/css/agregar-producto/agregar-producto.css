@@ -109,6 +109,16 @@
     color: #ff0000;
 }
 
+.error-msj {
+    display: none;
+}
+
+.active {
+    display: block;
+    font-size: 12px;
+    color: #ff0000;
+}
+
 @media screen and (max-width:768px) {
     .new__input, .new__button {
         width: 90%;
