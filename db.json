@@ -1,14 +1,6 @@
 {
   "productos": [
     {
-      "id": "a696f3c1-376a-4805-80f4-7a42caff6b31",
-      "nombre": "Figura Tengen Uzui",
-      "urlImagen": "https://ryokufiguras.com/wp-content/uploads/2023/06/Figura-Tengen-Uzui-Demon-Slayer-FIGURE-Kimetsu-No-Yaiba-Bandai-Spirits.webp",
-      "categoria": "Diversos",
-      "precio": "35.99",
-      "descripcion": "Figura anime"
-    },
-    {
       "id": "4ed6764d-c403-4a7c-a369-0c911b724d23",
       "nombre": "Figura Zenitsu ",
       "urlImagen": "https://i.pinimg.com/736x/b9/ad/92/b9ad92f344afe3cc57350edd8ec2cdd5.jpg",
@@ -55,6 +47,14 @@
       "categoria": "Diversos",
       "precio": "39.99",
       "descripcion": "Reloj Minecraft"
+    },
+    {
+      "id": "a5804871-639c-4271-a2e1-8bbdfb742892",
+      "nombre": "Figura Tengen Uzui",
+      "urlImagen": "https://ryokufiguras.com/wp-content/uploads/2023/06/Figura-Tengen-Uzui-Demon-Slayer-FIGURE-Kimetsu-No-Yaiba-Bandai-Spirits.webp",
+      "categoria": "Diversos",
+      "precio": "35.99",
+      "descripcion": "Figura Anime"
     }
   ],
   "perfil": [

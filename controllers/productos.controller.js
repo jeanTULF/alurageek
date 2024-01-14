@@ -4,12 +4,52 @@ const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, i
     const espacio = document.createElement("li");
     espacio.classList.add('productos__container-item');
     const contenido = `
+    <div class="productos__container-img">
         <img src="${urlImagen}">
+        <div class="icon-container">
+                    <button class="delete" type="button" id=${id}><i class="bi bi-trash-fill icon1"></i></button>
+                    <i class="bi bi-pencil-fill icon2" data-update></i>
+                </div>
+        </div>
         <p>${nombre}</p>
         <p>$ ${precio}</p>
         <p>${descripcion}</p>
     `;
     espacio.innerHTML = contenido;
+    const btn = espacio.querySelector("button");
+    btn.addEventListener("click", () => {
+        const id = btn.id;
+        Swal.fire({
+            title: '¿Estás seguro de eliminar este producto?',
+            text: 'Esta acción no se puede deshacer',
+            icon: 'warning',
+            showCancelButton: true,
+            allowOutsideClick: false,
+            confirmButtonText: 'Sí, eliminar',
+            cancelButtonText: 'Cancelar',
+            customClass: {
+                confirmButton: 'confirmswal',  
+                cancelButton: 'cancelswal'    
+              },
+          }).then((result) => {
+            if (result.isConfirmed) {
+              productsService
+                .eliminarProducto(id)
+                .then((respuesta) => {
+                    Swal.fire({
+                        title: '¡Producto eliminado!',
+                        icon: 'success',
+                        allowOutsideClick: false,
+                        showConfirmButton: false
+                      });
+                  console.log(respuesta);
+                })
+                .catch((err) => Swal.fire('Error', 'Ocurrió un error al eliminar el producto', 'error'));
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              // No hacer nada si el usuario cancela
+            }
+          });
+    });
     return espacio;
 }
 
