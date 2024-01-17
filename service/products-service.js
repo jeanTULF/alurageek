@@ -1,8 +1,8 @@
 const listaProductos = () => 
-fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+fetch("https://alurageek-api-fake.vercel.app/productos").then((respuesta) => respuesta.json());
 
 const crearProducto = (urlImagen, categoria, nombre, precio, descripcion) => {
-    return fetch ("http://localhost:3000/productos", {
+    return fetch ("https://alurageek-api-fake.vercel.app/productos", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -12,18 +12,18 @@ const crearProducto = (urlImagen, categoria, nombre, precio, descripcion) => {
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alurageek-api-fake.vercel.app/productos/${id}`, {
     method: "DELETE",
 });
 };
 
 const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => 
+    return fetch(`https://alurageek-api-fake.vercel.app/productos/${id}`).then((respuesta) => 
     respuesta.json());
 };
 
 const actualizarProducto = (urlImagen, categoria, nombre, precio, descripcion, id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alurageek-api-fake.vercel.app/productos/${id}`, {
         method: "PUT",
         headers: {
         "Content-Type": "application/json",

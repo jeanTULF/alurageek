@@ -41,9 +41,13 @@ const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, i
                         title: '¡Producto eliminado!',
                         icon: 'success',
                         allowOutsideClick: false,
-                        showConfirmButton: false
+                        showConfirmButton: false,
+                        
                       });
                   console.log(respuesta);
+                  setTimeout(() => {
+                    location.reload();
+                  }, 2000);
                 })
                 .catch((err) => Swal.fire('Error', 'Ocurrió un error al eliminar el producto', 'error'));
             } else if (result.dismiss === Swal.DismissReason.cancel) {
