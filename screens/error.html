@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/AluraGeek-logo.ico">
+    <link rel="stylesheet" href="../assets/css/header/style-header.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-style.css">
+    <link rel="stylesheet" href="../assets/css/header/header-style-responsive.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-style-responsive.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/Error/error.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Error</title>
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__item">
+            <a class="header__item-logo" href="#"><img src="../assets/img/Logo.png" alt="Logo AluraGeek"></a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="error__container">
+                <h1 class="error-title">Ups! Algo ha salido mal...</h1>
+                <img src="/assets/img/Error404.svg" alt="Error404">
+                <p class="mensaje">No pudimos procesar tu solicitud correctamente</p>
+                <a href="/index.html" class="error__home-link">Volver a la página de Inicio</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#"><img src="../assets/img/Logo.png" alt="AluraGeek-logo"></a>
+                <ul class="footer__link-list">
+                    <li class="footer__link-item"><a href="#">Quienes somos</a></li>
+                    <li class="footer__link-item"><a href="#">Politica de privacidad</a></li>
+                    <li class="footer__link-item"><a href="#">Programa de fidelidad</a></li>
+                    <li class="footer__link-item"><a href="#">Nuestras Tiendas</a></li>
+                    <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
+                    <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            
+            <form class="footer__form" id="formulario" data-formulario>
+                <p>Hable con nosotros</p>
+
+                <div class="form__input">
+                    <input type="text" id="nombre" name="nombre" required maxlength="40" data-nombre-form>
+                    <label for="nombre">Nombre</label>
+                    <div class="error-msj"><span>Este campo esta vacío</span></div>
+                    </div>
+    
+                    <div class="form__input">
+                        <input type="email" id="email" name="email" required data-email-form>
+                        <label for="email">Correo electrónico</label>
+                        <div class="error-msj"><span>Este campo esta vacío</span></div>
+                    </div>
+    
+                    <div class="form__input">
+                    <input type="text" id="mensaje" name="mensaje" required maxlength="120" data-msj-form>
+                    <label for="mensaje">Mensaje</label>
+                    <div class="error-msj"><span>Este campo esta vacío</span></div>
+                </div>
+                <button class="form__button" type="submit">Enviar mensaje</button>
+            </form>
+            
+        </footer>
+        <div class="final">
+            <p>Desarrollado por Jean Polo</p>
+            <p>2023</p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../scripts/app.js"></script>
+</body>
+</html>

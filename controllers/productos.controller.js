@@ -8,7 +8,7 @@ const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, i
         <img src="${urlImagen}">
         <div class="icon-container">
                     <button class="delete" type="button" id=${id}><i class="bi bi-trash-fill icon1"></i></button>
-                    <i class="bi bi-pencil-fill icon2" data-update></i>
+                    <a href="/editar-producto.html?id=${id}" id=${id} class="edit"><i class="bi bi-pencil-fill icon2" data-update></i></a>
                 </div>
         </div>
         <p>${nombre}</p>
@@ -16,6 +16,7 @@ const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, i
         <p>${descripcion}</p>
     `;
     espacio.innerHTML = contenido;
+    //eliminar elemento
     const btn = espacio.querySelector("button");
     btn.addEventListener("click", () => {
         const id = btn.id;

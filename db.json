@@ -9,12 +9,12 @@
       "descripcion": "Figura Anime"
     },
     {
-      "id": "f8f334f7-ae36-43b8-a4d1-d82315e5243b",
-      "nombre": "Playstation 5",
       "urlImagen": "https://i5.walmartimages.com/seo/Sony-PlayStation-5-Gaming-Console_02021359-c4bb-410e-940a-12930acbfd57.4d050069b07b687682d48144eb9d9032.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
       "categoria": "Consolas",
+      "nombre": "Playstation 5",
       "precio": "499.99",
-      "descripcion": "Consola última generación "
+      "descripcion": "Consola última generación",
+      "id": "f8f334f7-ae36-43b8-a4d1-d82315e5243b"
     },
     {
       "id": "0c7d73a0-e376-4066-9651-7ccc08688931",
@@ -33,12 +33,12 @@
       "descripcion": "T-shirt anime "
     },
     {
-      "id": "f7631b16-1dad-439c-a4ac-aeab9b5694ce",
-      "nombre": "Iphone 15 Pro Max",
       "urlImagen": "https://movicenter.com.pa/wp-content/uploads/2023/10/86c82e3d34595a405d18155633e9e7b2ee5ed667_Apple_MU773ZP_A_Mobile_Phone_Hero_1.jpg",
       "categoria": "Diversos",
-      "precio": "1499.99",
-      "descripcion": "Celulares"
+      "nombre": "Iphone 15 Pro Max",
+      "precio": "1399.99",
+      "descripcion": "Celulares",
+      "id": "f7631b16-1dad-439c-a4ac-aeab9b5694ce"
     },
     {
       "id": "428093db-e105-4acc-a683-a9f80a35cc77",
@@ -49,7 +49,7 @@
       "descripcion": "Reloj Minecraft"
     },
     {
-      "id": "a5804871-639c-4271-a2e1-8bbdfb742892",
+      "id": "15dafcbd-ad90-48e2-a198-8e27961b47cf",
       "nombre": "Figura Tengen Uzui",
       "urlImagen": "https://ryokufiguras.com/wp-content/uploads/2023/06/Figura-Tengen-Uzui-Demon-Slayer-FIGURE-Kimetsu-No-Yaiba-Bandai-Spirits.webp",
       "categoria": "Diversos",
