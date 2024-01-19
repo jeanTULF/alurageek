@@ -1,20 +1,16 @@
-// let nombre = document.querySelector("[data-nombre-form]");
-// let email = document.querySelector("[data-email-form]");
-// const formulario = document.querySelector("data-formulario");
-
 // formulario.addEventListener('submit', (e) => {
-//     if(!regex.test(nombre.value)){
+//      if(!regex.test(nombre.value)){
 //         alert(`el nombre ${nombre.value} no es valido`);
-//         e.preventDefault();
-//     } else {
-//         Swal.fire({
-//             title: 'Envio exitoso',
-//             text: '¡Formulario enviado correctamente!',
-//             icon: 'success',
-//             showConfirmButton: false,
-//             allowOutsideClick: false
-//         });
-//     }
+//          e.preventDefault();
+//      } else {
+//          Swal.fire({
+//              title: 'Envio exitoso',
+//              text: '¡Formulario enviado correctamente!',
+//              icon: 'success',
+//              showConfirmButton: false,
+//              allowOutsideClick: false
+//          });
+//      }
 // });
 
 
@@ -52,18 +48,13 @@ function mostrarMensajeDeError (tipoDeInput, input) {
 
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
-    if(validadores[tipoDeInput]) {
-        validadores[tipoDeInput](input)
-    }
-
-    const errorContainer = input.parentElement.querySelector(".error-msj");
 
     if (input.validity.valid) {
         input.parentElement.classList.remove("active");
-        errorContainer.innerHTML = "";  // Limpiar el mensaje de error
+        input.parentElement.querySelector(".error-msj").innerHTML = ""
     } else {
         input.parentElement.classList.add("active");
-        errorContainer.innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+        input.parentElement.querySelector(".error-msj").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
 
 };
@@ -71,6 +62,3 @@ export function valida(input) {
 
 
 //validacion formulario input 
-
-const name = document.querySelector("data-nombre");
-const url = document.querySelector("data-url");

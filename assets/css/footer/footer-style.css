@@ -110,7 +110,7 @@
     display: none;
 }
 
-.active {
+.active .error-msj{
     display: block;
     font-size: 12px;
     color: #ff0000;

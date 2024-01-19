@@ -113,6 +113,16 @@
     align-items: center;
 }
 
+.error-msj {
+    display: none;
+}
+
+.active .error-msj{
+    display: block;
+    font-size: 12px;
+    color: #ff0000;
+}
+
 @media screen and (max-width:768px) {
     .footer {
         display: grid;

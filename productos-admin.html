@@ -160,25 +160,28 @@
             <li class="footer__link-item"><a href="#">Quiero ser franquiciado</a></li>
             <li class="footer__link-item"><a href="#">Anúncie aquí</a></li>
         </ul>
-        <div class="footer__form">
+        <form class="footer__form" id="formulario" data-formulario>
             <p>Hable con nosotros</p>
 
             <div class="form__input">
-                <input type="text" id="nombre" required>
+                <input type="text" id="nombre" name="nombre" required maxlength="40" data-tipo="nombre">
                 <label for="nombre">Nombre</label>
+                <div class="error-msj"><span>Este campo esta vacío</span></div>
                 </div>
 
                 <div class="form__input">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required data-tipo="email">
                     <label for="email">Correo electrónico</label>
+                    <div class="error-msj"><span>Este campo esta vacío</span></div>
                 </div>
 
                 <div class="form__input">
-                <input type="text" id="mensaje" required>
+                <input type="text" id="mensaje" name="mensaje" required maxlength="120" data-tipo="mensaje">
                 <label for="mensaje">Mensaje</label>
+                <div class="error-msj"><span>Este campo esta vacío</span></div>
             </div>
-            <button class="form__button">Enviar mensaje</button>
-        </div>
+            <button class="form__button" type="submit">Enviar mensaje</button>
+        </form>
     </footer>
     <div class="final">
         <p>Desarrollado por Jean Polo</p>
@@ -187,5 +190,6 @@
 </main>
 <script type="module" src="./controllers/productos.controller.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="./scripts/app.js"></script>
 </body>
 </html>
