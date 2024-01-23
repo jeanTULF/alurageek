@@ -1,18 +1,34 @@
-// formulario.addEventListener('submit', (e) => {
-//      if(!regex.test(nombre.value)){
-//         alert(`el nombre ${nombre.value} no es valido`);
-//          e.preventDefault();
-//      } else {
-//          Swal.fire({
-//              title: 'Envio exitoso',
-//              text: '¡Formulario enviado correctamente!',
-//              icon: 'success',
-//              showConfirmButton: false,
-//              allowOutsideClick: false
-//          });
-//      }
-// });
-
+const formulario = document.querySelector('.footer__form');
+ let regex = /^[a-zA-Z\s]+$/;
+ 
+ formulario.addEventListener('submit', (e) => {
+      if(!regex.test(nombre.value)){
+        Swal.fire({
+            title: 'Error',
+            text: 'El nombre colocado no es válido',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            allowOutsideClick: false,
+            customClass: {
+                confirmButton: 'botonswal'
+            }
+        });
+          e.preventDefault();
+      } else {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+          });
+          Toast.fire({
+            icon: "success",
+            title: "¡Formulario enviado exitosamente!",
+            background: '#f1f1f1'
+          });
+      }
+ });
 
 const tipoDeErrores = [
     "valueMissing",

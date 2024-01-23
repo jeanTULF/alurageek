@@ -7,7 +7,6 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
         "valueMissing",
         "typeMismatch",
         "patternMismatch",
-        "customError",
     ];
 
     const mensajesDeError = {
