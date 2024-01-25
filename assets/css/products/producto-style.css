@@ -68,4 +68,9 @@
 
 .productos__container-item img {
     width: 200px;
+    transition: .3s ease;
+}
+
+.productos__container-item img:hover {
+    transform: scale(1.1);
 }

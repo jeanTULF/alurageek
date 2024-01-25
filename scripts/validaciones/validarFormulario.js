@@ -74,7 +74,3 @@ export function valida(input) {
     }
 
 };
-
-
-
-//validacion formulario input 

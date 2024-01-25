@@ -44,11 +44,22 @@
                 <div id="preview"></div>
         </div>
             <input type="text" name="urlimage" class="new__input" placeholder="URL de imagen" data-url>
-            <div class="error-msj "><span>Este campo no puede estar vacío</span></div>
-            <input type="text" name="categoria" class="new__input" placeholder="Categoria" data-categoria>
-            <input type="text" name="nombre" class="new__input" placeholder="Nombre del producto" required maxlength="20" data-nombre>
-            <input type="text" name="precio" class="new__input" placeholder="Precio del producto" data-precio>
-            <textarea name="descripcion" class="new__input" placeholder="Descripcion del producto" maxlength="150" data-descripcion></textarea>
+            <div class="input__container">
+            <input type="text" name="categoria" class="new__input" placeholder="Categoria" data-categoria required>
+            <div class="error-msj"><span>Este campo esta vacío</span></div>
+            </div>
+            <div class="input__container">
+            <input type="text" name="nombre" class="new__input" placeholder="Nombre del producto" maxlength="20" data-nombre required>
+            <div class="error-msj"><span>Este campo esta vacío</span></div>
+            </div>
+            <div class="input__container">
+            <input type="text" name="precio" class="new__input" placeholder="Precio del producto" data-precio required>
+            <div class="error-msj"><span>Este campo esta vacío</span></div>
+            </div>
+            <div class="input__container">
+            <textarea name="descripcion" class="new__input" placeholder="Descripcion del producto" maxlength="150" data-descripcion required></textarea>
+            <div class="error-msj"><span>Este campo esta vacío</span></div>
+            </div>
             <button type="submit" class="new__button">Agregar producto</button>
     </form>
     </main>
