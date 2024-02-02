@@ -50,7 +50,7 @@ const mensajesDeError = {
     }
 }
 
-function mostrarMensajeDeError (tipoDeInput, input) {
+function mostrarMensajeDeError(tipoDeInput, input) {
     let mensaje = "";
     tipoDeErrores.forEach(error => {
         if(input.validity[error]){
@@ -72,5 +72,4 @@ export function valida(input) {
         input.parentElement.classList.add("active");
         input.parentElement.querySelector(".error-msj").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
-
 };

@@ -1,6 +1,7 @@
 import { valida } from "./validaciones/validarFormulario.js"; 
 
-const inputs = document.querySelectorAll('input');
+const container = document.querySelector('.footer__form');
+const inputs = container.querySelectorAll('input');
 
 inputs.forEach( input => {
     input.addEventListener('blur', (input) => {

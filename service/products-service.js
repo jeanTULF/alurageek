@@ -43,4 +43,4 @@ export const productsService = {
     eliminarProducto,
     detalleProducto,
     actualizarProducto
-}
+};
