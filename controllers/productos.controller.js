@@ -1,6 +1,6 @@
 import { productsService } from "../service/products-service.js";
 
-const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, id) => {
+const crearNuevoProducto = (nombre, urlImagen, precio, descripcion, id) => {
     const espacio = document.createElement("li");
     espacio.classList.add('productos__container-item');
     const contenido = `

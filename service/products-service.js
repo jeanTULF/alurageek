@@ -22,6 +22,22 @@ const detalleProducto = (id) => {
     respuesta.json());
 };
 
+const categoriaProductoDiversos = () => {
+    return fetch(`https://alurageek-api-fake.vercel.app/productos?categoria=Diversos`).then((respuesta) => 
+    respuesta.json());
+}
+
+const categoriaProductoConsolas = () => {
+    return fetch(`https://alurageek-api-fake.vercel.app/productos?categoria=Consolas`).then((respuesta) => 
+    respuesta.json());
+}
+
+const categoriaProductoSW = () => {
+    return fetch(`https://alurageek-api-fake.vercel.app/productos?categoria=Starwars`).then((respuesta) => 
+    respuesta.json());
+}
+
+
 const actualizarProducto = (urlImagen, categoria, nombre, precio, descripcion, id) => {
     return fetch(`https://alurageek-api-fake.vercel.app/productos/${id}`, {
         method: "PUT",
@@ -37,10 +53,16 @@ const actualizarProducto = (urlImagen, categoria, nombre, precio, descripcion, i
 
 
 
+
+
 export const productsService = {
     crearProducto,
     listaProductos,
     eliminarProducto,
     detalleProducto,
-    actualizarProducto
+    actualizarProducto,
+    categoriaProductoDiversos,
+    categoriaProductoConsolas,
+    categoriaProductoSW
 };
+

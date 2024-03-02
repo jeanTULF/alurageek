@@ -68,6 +68,10 @@
 
 .productos__container-item img {
     width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    object-fit: cover;
     transition: .3s ease;
 }
 
