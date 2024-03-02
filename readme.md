@@ -21,3 +21,6 @@ Tecnologías Utilizadas:
 - Html
 - Css
 - Javascript Vanilla
+
+##### Estado Actual:
+El eCommerce está actualmente disponible para su visita y exploración. Sin embargo, sigue siendo un proyecto en desarrollo y puede estar sujeto a futuras actualizaciones y mejoras.
