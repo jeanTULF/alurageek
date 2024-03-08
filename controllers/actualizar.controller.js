@@ -37,8 +37,8 @@ const obtenerInformacion = async () => {
 
 obtenerInformacion();
 
-formulario.addEventListener("submit", (evento) => {
-    evento.preventDefault();
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
   

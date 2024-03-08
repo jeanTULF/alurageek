@@ -1,6 +1,6 @@
 import { productsService } from "../service/products-service.js";
 
-const crearNuevoProducto = (nombre, urlImagen, precio, descripcion, id) => {
+const crearNuevoProducto = (nombre, urlImagen, categoria, precio, descripcion, id) => {   //no sacar 'categoria' porque se rompe el código
     const espacio = document.createElement("li");
     espacio.classList.add('productos__container-item');
     const contenido = `
@@ -12,10 +12,11 @@ const crearNuevoProducto = (nombre, urlImagen, precio, descripcion, id) => {
                 </div>
         </div>
         <p>${nombre}</p>
-        <p>$ ${precio}</p>
+        <p>$${precio}</p>
         <p>${descripcion}</p>
     `;
     espacio.innerHTML = contenido;
+
     //eliminar elemento
     const btn = espacio.querySelector("button");
     btn.addEventListener("click", () => {
