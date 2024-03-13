@@ -25,8 +25,22 @@
         <div class="header__item">
             <a class="header__item-logo" href=""><img src="./assets/img/Logo.png" alt="Logo AluraGeek"></a>
             <div class="header__item-searchbar">
-            <input class="header__item-searchbar-input" placeholder="¿Qué deseas buscar?">
-            <a class="header__item-searchicon" href="#"><img class="header__item-searchbar-icon" src="./assets/img/Icone.svg" alt="searchbar-icon"></a>
+                <div class="search-box">
+                    <input class="header__item-searchbar-input" placeholder="¿Qué deseas buscar?" autocomplete="off">
+                    <a class="header__item-searchicon" href="#"><img class="header__item-searchbar-icon" src="./assets/img/Icone.svg" alt="searchbar-icon"></a>
+                </div>
+                <div class="result-box">
+                    <ul>
+                        <li>
+                            <p>Javascript</p>
+                            <img src="/assets/img/control.png" alt="">
+                        </li>
+                        <li>
+                            <p>Sexo</p>
+                            <img src="/assets/img/camisa-atari.png" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header__item">
@@ -129,5 +143,6 @@
     <script type="module" src="./scripts/app.js"></script>
     <script src="./scripts/reload.js"></script>
     <script type="module" src="./controllers/index.controller.js"></script>
+    <script type="module" src="/scripts/searchbar.js"></script>
 </body>
 </html>
