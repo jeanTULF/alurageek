@@ -82,13 +82,13 @@
 }
 
 .result-box li {
-    text-decoration: none;
     list-style: none;
     font-size: 12px;
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #464646;
 }
 
 .result-box li:hover {
@@ -98,4 +98,5 @@
 
 .result-box li img {
     width: 50px;
+    height: 50px;
 }
